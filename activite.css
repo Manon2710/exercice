@@ -1,0 +1,76 @@
+body {
+  font-family: "Open Sans";
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.contenu {
+  background-image: url(Photos/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 20%;
+  background: #42a4f4;
+  border-radius: 5px 0 0 5px;
+}
+
+.presentation {
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.photo {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  box-shadow: 6px 6px 3px black;
+}
+
+.conteneur {
+  display: flex;
+}
+
+.section {
+  margin-left: 20px;
+}
+h1, p {
+  text-align: center;
+}
+
+h2 {
+  color: #42a4f4;
+  width: 250px;
+  border: 2px #42a4f4 solid;
+  padding: 5px 10px;
+}
+
+@font-face {
+font-family: "Open Sans";
+src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+.conteneur .siderbar {
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+@media (max-width: 767px) {
+  .conteneur {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+}
